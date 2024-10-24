@@ -1,0 +1,84 @@
+// rubrica evaluacion
+
+integer factorial(integer n);
+
+// Función principal
+integer main() {
+    // Declaración y asignación de variables
+
+    integer x = factorial(-5, 6!=8,"hola mundo",!factorial(1),a[0]);           
+    integer y;                
+    boolean isValid = true; 
+
+    // asignacion y expresión aritmética
+    y=x*2+(x-3)*2;
+
+    // Estructuras de control: if-else anidado
+    if (y > 0) 
+        if (isValid && x <= y) 
+            print("y is positive and x is less than or equal to y");
+        
+     else 
+        print("y is not positive");
+    
+    print("y is not positive");
+
+    
+
+    // Bucle for con declaracion en la inicializacion
+    for (integer i = 0; i < x || x < 10; i = i + 1) {
+        globalArray[i] = factorial(i);
+        print("Factorial of ", i, " is ", globalArray[i]);
+    }
+
+
+    // Llamada a una función con parámetros
+    integer result = computeSum(x, y);
+
+    // Uso de while y operadores unarios
+    while (result > 0) {
+        result = result - 1;
+    }
+
+
+    // Retorno de la función main
+    return 0;
+}
+
+
+integer anidados() {
+    integer a = 5;
+    integer b = 10;
+    integer c = 15;
+
+    if (a < b) {
+        if (b < c) {
+            if (a + b > c) {
+                print("Nested if: a + b > c");
+            } else {
+                print("Nested else: a + b <= c");
+            }
+        } else {
+            print("Second level else");
+        }
+    } else {
+        print("First level else");
+    }
+
+    return 0;
+}
+
+
+// Definición de la función factorial
+integer factorial(integer n) {
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+// Definición de una función adicional
+integer computeSum(integer a, integer b) {
+    return a + b;
+}
